@@ -15,7 +15,6 @@ print (inputs.shape) #(1000,2) correct
 noise = np.random.uniform(-1,1,(observations,1))
 targets =   2*xs   -  3*zs   +   5 +       noise
 #1000*1    1000*1    1000*1      scalar    1000*1
-print(targets.shape)
 
 targets = targets.reshape(observations,)
 
